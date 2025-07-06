@@ -18,8 +18,14 @@ header {
     right: 0;
 }
 .container{
-    width: 1200px;
+    width: 1360px;
     margin: auto;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
 }
 #hero{
     background-image: url("img/hero.png");
@@ -72,7 +78,7 @@ ul.nav-list {
     font-weight: 400;
 }
 
-.content {padding: 75px 0px;width: 50%;}
+.content {padding: 75px 110px 0px 0px;width: 50%;}
 
 .content p {
     color: #ffff;
@@ -86,6 +92,9 @@ ul.nav-list {
     align-items: end;
     justify-content: end;
     animation: updown 3s ease-in-out infinite; 
+}
+.banner-image img {
+    width: 100%;
 }
 @keyframes updown {
     0%{
@@ -119,3 +128,98 @@ button.btn-2 {
     cursor: pointer;
 }
 /* -----------Banner Css End Here ---------------- */
+
+/* -----------Media Query for Responsive-------------- */
+/* Small devices (phones) */
+@media (max-width: 600px) { 
+    /* ------Banner Responsive ---------- */
+    #hero{
+        padding-bottom: 50px;
+    }
+.content h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}   
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) { 
+    /* ---MENU ---------- */
+     .container {
+    width: 80%;
+    padding: 0 0;
+  }
+
+  .nav-inner {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-link {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .nav-link.active {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: white;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item a {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #0A2640;
+  }
+
+  .nav-button {
+    padding: 10px 20px;
+  }
+  /* ----------Banner Responsive Here ---------- */
+  #hero{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .banner-inner-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.content {
+    padding: 75px 0px;
+    width: 100%;
+}
+.banner-image {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    animation: updown 3s ease-in-out infinite;
+}
+ }
+
+/* Large devices (desktops) */
+@media (max-width: 1024px) { 
+ .container {
+    width: 80%;
+    padding: 0 0;
+  }
+}
