@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .container{
     width: 1200px;
@@ -20,7 +32,7 @@
     padding: 20px 0px;
 }
 
-.nav-link {
+.nav-link  {
     display: flex;
     align-items: center;
 }
@@ -30,7 +42,7 @@ ul.nav-list {
     margin-right: 40px;
 }
 
-.nav-item {
+.nav-item a {
     font-size: 20px;
     color: white;
     margin: 0 25px;
