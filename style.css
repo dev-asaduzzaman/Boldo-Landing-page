@@ -11,6 +11,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+/* -----------Header Css Start Here ---------------- */
 header {
     position: absolute;
     left: 0;
@@ -24,7 +25,10 @@ header {
     background-image: url("img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-inner {
     display: flex;
@@ -53,3 +57,31 @@ ul.nav-list {
     font-size: 18px;
     font-weight: 600;
 }
+/* -----------Banner Css End Here ---------------- */
+
+/* -----------Banner Css Start Here ---------------- */
+.banner-inner-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.content h1 {
+    color: white;
+    font-size: 49px;
+    font-weight: 400;
+}
+
+.content {padding: 75px 0px;}
+
+.content p {
+    color: #ffff;
+    font-size: 16px;
+    padding: 20px 0;
+}
+.banner-image {
+    width: 50%;
+}
+
+/* -----------Banner Css End Here ---------------- */
