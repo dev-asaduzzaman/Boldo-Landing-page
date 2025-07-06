@@ -31,10 +31,11 @@ header {
     background-image: url("img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 150px 0;
 }
 .nav-inner {
     display: flex;
@@ -129,6 +130,78 @@ button.btn-2 {
 }
 /* -----------Banner Css End Here ---------------- */
 
+/* -----------Service Css Start Here ---------------- */
+section#services {
+    padding: 100px 0;
+}
+
+.service-info {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.service-heading {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: gray;
+}
+.service-sub-heading{
+    font-weight: 500;
+    font-size: 48px;
+}
+.all-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.service-card-1 {
+    width: 33.3%;
+}
+.service-card-2 {
+    width: 33.3%;
+}
+.service-card-3 {
+    width: 33.3%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body img {
+    width: 70%;
+    margin-bottom: 20px;
+}
+.card-info{
+    width: 70%;
+    text-align: left;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card-btn {
+    background: transparent;
+    font-size: 19px;
+    border: none;
+}
+/* -----------Service Css End Here ---------------- */
+
 /* -----------Media Query for Responsive-------------- */
 /* Small devices (phones) */
 @media (max-width: 600px) { 
@@ -214,8 +287,32 @@ button.btn-2 {
     justify-content: end;
     animation: updown 3s ease-in-out infinite;
 }
- }
+.service-card-1 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.service-card-2 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.service-card-3 {
+     width: 100%;
+    margin-bottom: 50px;
+}
 
+/* ----------Service Responsive Here ---------- */
+.service-sub-heading {
+    font-weight: 500;
+    font-size: 30px;
+}
+.all-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+}
 /* Large devices (desktops) */
 @media (max-width: 1024px) { 
  .container {
