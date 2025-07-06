@@ -2,7 +2,42 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 .container{
     width: 1200px;
+    margin: auto;
+}
+#hero{
+    background-image: url("img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+ul.nav-list {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-item {
+    font-size: 20px;
+    color: white;
+    margin: 0 25px;
+}
+.nav-button{
+    padding: 10px 38px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
 }
