@@ -62,9 +62,8 @@ ul.nav-list {
 /* -----------Banner Css Start Here ---------------- */
 .banner-inner-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 50px;
-    width: 50%;
 }
 
 .content h1 {
@@ -73,7 +72,7 @@ ul.nav-list {
     font-weight: 400;
 }
 
-.content {padding: 75px 0px;}
+.content {padding: 75px 0px;width: 50%;}
 
 .content p {
     color: #ffff;
@@ -82,6 +81,41 @@ ul.nav-list {
 }
 .banner-image {
     width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    animation: updown 3s ease-in-out infinite; 
 }
+@keyframes updown {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 
+}
+button.btn-1 {
+    background: #65E4A3;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #0A2640;
+    border-radius: 61px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button.btn-2 {
+    background: transparent;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #ffff;
+    border: 2px solid #ffff;
+    border-radius: 61px;
+    font-weight: 600;
+    cursor: pointer;
+}
 /* -----------Banner Css End Here ---------------- */
